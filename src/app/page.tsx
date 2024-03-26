@@ -56,7 +56,7 @@ export default function Home() {
           comigo.
         </p>
       </div>
-      <div className="flex justify-center md:justify-start">
+      <div className="flex flex-col items-center justify-center md:flex-row md:justify-start md:gap-x-8">
         <Image
           alt="Ítalo Covas picture"
           src="/img/italo.jpg"
@@ -64,6 +64,15 @@ export default function Home() {
           height={200}
           className="rounded-lg bg-contain"
         />
+        <div className="mt-8 flex flex-col items-center gap-y-2 text-center text-sm md:items-start md:text-left md:text-base">
+          <span>
+            - “O importante é não parar de questionar, a curiosidade tem sua
+            própria razão de existir.”
+          </span>
+          <span className="text-[#d4d4d8]">
+            Essa frase poderia ser minha mas é do Einstein 🤣
+          </span>
+        </div>
       </div>
     </main>
   );
