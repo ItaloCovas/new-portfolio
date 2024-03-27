@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-theme='dark'] {
+  color: red;
+}
+
+[data-theme='light'] {
+  header {
+    strong {
+      color: theme('colors.white');
+    }
+
+    a {
+      border-color: theme('colors.white');
+    }
+  }
+}
+
+[data-theme='blue'] {
+  header {
+    strong {
+      color: theme('colors.blue.400');
+    }
+
+    a {
+      border-color: theme('colors.blue.400');
+    }
+  }
+
+  main {
+    p {
+      a {
+        color: theme('colors.blue.400');
+      }
+    }
+  }
+
+  footer {
+    span {
+      color: theme('colors.blue.400');
+    }
+  }
+}
+[data-theme='red'] {
+  header {
+    strong {
+      color: theme('colors.red.400');
+    }
+
+    a {
+      border-color: theme('colors.red.400');
+    }
+  }
+
+  main {
+    p {
+      a {
+        color: theme('colors.red.400');
+      }
+    }
+  }
+
+  footer {
+    span {
+      color: theme('colors.red.400');
+    }
+  }
+}
+
+[data-theme='green'] {
+  header {
+    strong {
+      color: theme('colors.green.400');
+    }
+
+    a {
+      border-color: theme('colors.green.400');
+    }
+  }
+
+  main {
+    p {
+      a {
+        color: theme('colors.green.400');
+      }
+    }
+  }
+
+  footer {
+    span {
+      color: theme('colors.green.400');
+    }
+  }
+}
+
+[data-theme='orange'] {
+  header {
+    strong {
+      color: theme('colors.orange.400');
+    }
+
+    a {
+      border-color: theme('colors.orange.400');
+    }
+  }
+
+  main {
+    p {
+      a {
+        color: theme('colors.orange.400');
+      }
+    }
+  }
+
+  footer {
+    span {
+      color: theme('colors.orange.400');
+    }
+  }
+}
+
+[data-theme='violet'] {
+  header {
+    strong {
+      color: theme('colors.violet.400');
+    }
+
+    a {
+      border-color: theme('colors.violet.400');
+    }
+  }
+
+  main {
+    p {
+      a {
+        color: theme('colors.violet.400');
+      }
+    }
+  }
+
+  footer {
+    span {
+      color: theme('colors.violet.400');
+    }
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 5px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d8;
+}

@@ -1,3 +1,8 @@
+interface ThemeColorsProps {
+  color: 'blue' | 'green' | 'red' | 'orange' | 'violet';
+  id: number;
+}
+
 export const MENU_ITEM_LIST = [
   { name: 'Início', pathname: '/' },
   { name: 'Sobre mim', pathname: '/about-me' },
@@ -9,10 +14,10 @@ export const MENU_ITEM_LIST = [
   }
 ];
 
-export const THEME_COLORS = [
-  { id: 1, color: 'bg-blue-500' },
-  { id: 3, color: 'bg-orange-500' },
-  { id: 2, color: 'bg-red-500' },
-  { id: 4, color: 'bg-green-500' },
-  { id: 5, color: 'bg-violet-500' }
+export const THEME_COLORS: ThemeColorsProps[] = [
+  { id: 1, color: 'blue' },
+  { id: 3, color: 'orange' },
+  { id: 2, color: 'red' },
+  { id: 4, color: 'green' },
+  { id: 5, color: 'violet' }
 ];

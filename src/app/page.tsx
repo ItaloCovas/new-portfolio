@@ -15,14 +15,14 @@ export default function Home() {
         <p className="text-base">
           Seja bem-vindo! Meu nome é <strong>Ítalo Garcia Covas</strong> e
           atualmente sou um Desenvolvedor de Software e um{' '}
-          <a
+          <Link
             href="https://www.sebrae-sc.com.br/blog/o-que-e-lifelong-learning"
             target="_blank"
             className="cursor-pointer text-base font-bold text-white underline"
           >
             eterno aprendiz
-          </a>{' '}
-          ♾️ que vive no 🇧🇷. Criei esse website para mostrar um pouco do meu
+          </Link>{' '}
+          que vive no 🇧🇷. Criei esse website para mostrar um pouco do meu
           trabalho e também alguns pensamentos no meu futuro blog pessoal{' '}
           <strong>(tech/non-tech)</strong>.
         </p>
@@ -34,17 +34,21 @@ export default function Home() {
         <p className="mt-4 text-base">
           Sou extremamente empolgado com tecnologia e o que posso construir com
           ela, mas para além do trabalho algumas coisas que eu gosto são:{' '}
-          <a
+          <Link
             href="https://www.symplicity.com/pt-br/blog/como-hobbies-e-atividades-extracurriculares-ajudam-no-crescimento-da-carreira#:~:text=Atividades%20fora%20do%20ambiente%20de,na%20carreira%20e%20vice%2Dversa."
             target="_blank"
             className="cursor-pointer text-base font-bold text-white underline"
           >
             trilhas de bicicleta ~ música ~ arte ~ natureza e gastronomia.
-          </a>
+          </Link>
         </p>
         <p className="mt-4 text-base">
           Obrigado por visitar meu{' '}
-          <Link href="/" className="cursor-pointer text-base font-bold ">
+          <Link
+            href="https://medium.com/valter-nascimento-blog/o-que-e-jardim-digital-7029673da847"
+            target="_blank"
+            className="cursor-pointer text-base font-bold underline"
+          >
             jardim digital🪴
           </Link>{' '}
           onde compartilho coisas que me fazem ser quem sou. Caso queira falar

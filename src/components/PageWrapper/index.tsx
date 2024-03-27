@@ -1,4 +1,5 @@
 'use client';
+import { ThemeProvider } from 'next-themes';
 import { ReactNode } from 'react';
 
 interface PageWrapperProps {
@@ -7,8 +8,10 @@ interface PageWrapperProps {
 
 export function PageWrapper({ children }: PageWrapperProps) {
   return (
-    <div className="flex min-h-screen w-full max-w-[800px] flex-col bg-transparent px-4 py-10 md:px-10">
-      {children}
-    </div>
+    <ThemeProvider defaultTheme="dark">
+      <div className="flex min-h-screen w-full max-w-[800px] flex-col bg-transparent px-4 py-10 md:px-10">
+        {children}
+      </div>
+    </ThemeProvider>
   );
 }

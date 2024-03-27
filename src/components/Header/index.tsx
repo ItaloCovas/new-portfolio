@@ -19,7 +19,7 @@ export function Header() {
         <span className="cursor-pointer select-none rounded-xl text-xl font-bold text-white">
           ítalocovas
         </span>
-        <strong className="text-3xl text-blue-500">.</strong>
+        <strong className="text-3xl">.</strong>
       </Link>
       <nav className="hidden md:flex">
         {MENU_ITEM_LIST.map((item) => {

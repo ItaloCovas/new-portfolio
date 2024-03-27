@@ -21,7 +21,7 @@ export function MenuItem({ name, itemPathname }: MenuItemProps) {
       href={itemPathname ?? '/'}
       target={name === 'Coffee Chat ☕' ? '_blank' : '_parent'}
       className={cn(
-        pathname === itemPathname ? 'border-b-[1px] border-blue-500' : '',
+        pathname === itemPathname ? 'border-b-[1px]' : '',
         name === 'Blog' ? 'cursor-not-allowed' : 'cursor-pointer',
         'rounded-t-md  px-4 py-2 text-base transition-colors duration-200 ease-in-out last-of-type:pr-0 hover:bg-white/10'
       )}

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
+import './globals.scss';
 import { cn } from '@/utils/cn';
 import { Header } from '@/components/Header';
 import { PageWrapper } from '@/components/PageWrapper';
@@ -19,10 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" suppressHydrationWarning>
       <body
         className={cn(
-          'flex h-full w-full items-center justify-center bg-[#151515]',
+          'flex h-full w-full items-center justify-center bg-[#151515] ',
           inter.className
         )}
       >
