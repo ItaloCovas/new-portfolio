@@ -3,15 +3,15 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex w-full flex-col gap-y-10 bg-transparent py-8 text-white">
+    <main className="flex w-full flex-col gap-y-10 bg-transparent py-10 text-white">
       <div className="">
         <h1 className="text-4xl font-bold text-white">Olá,</h1>
-        <h2 className="text-2xl font-bold text-[#d4d4d8]">
+        <h2 className="text-2xl font-bold text-zinc-300">
           esse é o meu lugar na Internet.
         </h2>
       </div>
 
-      <div className="text-[#d4d4d8]">
+      <div className="text-zinc-300">
         <p className="text-base">
           Seja bem-vindo! Meu nome é <strong>Ítalo Garcia Covas</strong> e
           atualmente sou um Desenvolvedor de Software e um{' '}
@@ -69,8 +69,8 @@ export default function Home() {
             - “O importante é não parar de questionar, a curiosidade tem sua
             própria razão de existir.”
           </span>
-          <span className="text-[#d4d4d8]">
-            Essa frase poderia ser minha mas é do Einstein 🤣
+          <span className="text-zinc-300">
+            Essa frase parece ser minha mas é do Einstein 🤣
           </span>
         </div>
       </div>

@@ -8,23 +8,23 @@ export function Footer() {
         © 2024 italocovas.dev
       </Link>
       <span className="text-center text-sm">
-        feito com amor, carinho e atenção.
+        feito com atenção, amor e carinho.
       </span>
 
       <div className="flex items-center gap-x-[1px] justify-self-end">
         <Link
           href="https://www.github.com/ItaloCovas"
           target="_blank"
-          className="cursor-pointer rounded-full p-[2px] transition-all duration-200 hover:bg-[#d4d4d8]/20"
+          className="cursor-pointer rounded-full p-[2px] transition-all duration-200 hover:bg-zinc-300/20"
         >
-          <TbBrandGithub className="h-6 w-6 text-[#d4d4d8] hover:text-white" />
+          <TbBrandGithub className="h-6 w-6 text-zinc-300 hover:text-white" />
         </Link>
         <Link
           href="https://www.linkedin.com/in/ItaloCovas"
           target="_blank"
-          className="cursor-pointer rounded-full p-[2px] transition-all duration-200 hover:bg-[#d4d4d8]/20"
+          className="cursor-pointer rounded-full p-[2px] transition-all duration-200 hover:bg-zinc-300/20"
         >
-          <TbBrandLinkedin className="h-6 w-6 text-[#d4d4d8] hover:text-white" />
+          <TbBrandLinkedin className="h-6 w-6 text-zinc-300 hover:text-white" />
         </Link>
       </div>
     </footer>

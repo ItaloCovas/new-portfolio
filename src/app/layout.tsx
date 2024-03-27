@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body
         className={cn(
-          'flex h-full w-full items-center justify-center bg-radial-gradient',
+          'flex h-full w-full items-center justify-center bg-[#151515]',
           inter.className
         )}
       >
