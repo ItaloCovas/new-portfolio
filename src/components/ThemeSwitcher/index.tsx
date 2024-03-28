@@ -5,11 +5,11 @@ import { useState, useEffect } from 'react';
 import { RxMoon, RxSun } from 'react-icons/rx';
 
 export default function ThemeSwitcher(): JSX.Element | null {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState<boolean>(false);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
   };
 
   // Workaround to see if its already rendered in the client
@@ -23,7 +23,7 @@ export default function ThemeSwitcher(): JSX.Element | null {
 
   return (
     <div className="mt-2">
-      {theme === 'dark' ? (
+      {resolvedTheme === 'dark' ? (
         <RxSun
           onClick={handleThemeSwitch}
           className="h-7 w-7 cursor-pointer text-[#F3C432] hover:text-[#3F4347] hover:transition hover:duration-500 hover:ease-in-out"

@@ -1,11 +1,19 @@
+'use client';
+import { BACKGROUNDS } from '@/constants/colors';
+import { useColors } from '@/hooks/useColors';
+import { cn } from '@/utils/cn';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
+  const { color } = useColors();
+
   return (
     <main className="flex w-full flex-col gap-y-10 bg-transparent py-10 text-white">
       <div className="">
-        <h1 className="text-4xl font-bold text-white">Olá,</h1>
+        <h1 className={cn('text-4xl font-bold text-white', BACKGROUNDS[color])}>
+          Olá,
+        </h1>
         <h2 className="text-2xl font-bold text-zinc-300">
           esse é o meu lugar na Internet.
         </h2>
@@ -74,7 +82,7 @@ export default function Home() {
             própria razão de existir.”
           </span>
           <span className="text-zinc-300">
-            Essa frase parece ser minha mas é do Einstein 🤣
+            Essa frase parece ser minha mas é do Einstein
           </span>
         </div>
       </div>
