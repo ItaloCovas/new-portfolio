@@ -1,14 +1,20 @@
+'use client';
+import { TEXTS } from '@/constants/colors';
+import { useColors } from '@/hooks/useColors';
+import { cn } from '@/utils/cn';
 import Link from 'next/link';
 import { TbBrandGithub, TbBrandLinkedin } from 'react-icons/tb';
 
 export function Footer() {
+  const { color } = useColors();
+
   return (
     <footer className="flex max-w-[800px] flex-1 flex-col items-center justify-between gap-y-4 border-t-[1px] border-white/10 bg-transparent py-4 text-white md:flex-row md:py-2 md:py-4">
       <Link href="/" className="text-center text-sm">
         © 2024 italocovas.dev
       </Link>
-      <span className="text-center text-sm">
-        feito com atenção, amor e carinho.
+      <span className={cn('text-center text-sm', TEXTS[color!])}>
+        feito com atenção e carinho.
       </span>
 
       <div className="flex items-center gap-x-[1px] justify-self-end">

@@ -16,7 +16,10 @@ export function ColorPalette({ color }: ColorPaletteProps) {
         'h-5 w-5 cursor-pointer rounded-full',
         themeColor === color ? 'border-2 border-black' : ''
       )}
-      onClick={() => setColor(color)}
+      onClick={() => {
+        setColor(color);
+        localStorage.setItem('preferred_color', color);
+      }}
     ></div>
   );
 }

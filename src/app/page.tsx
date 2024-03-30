@@ -1,5 +1,5 @@
 'use client';
-import { BACKGROUNDS } from '@/constants/colors';
+import { TEXTS } from '@/constants/colors';
 import { useColors } from '@/hooks/useColors';
 import { cn } from '@/utils/cn';
 import Image from 'next/image';
@@ -10,10 +10,8 @@ export default function Home() {
 
   return (
     <main className="flex w-full flex-col gap-y-10 bg-transparent py-10 text-white">
-      <div className="">
-        <h1 className={cn('text-4xl font-bold text-white', BACKGROUNDS[color])}>
-          Olá,
-        </h1>
+      <div>
+        <h1 className={cn('text-4xl font-bold', TEXTS[color!])}>Olá,</h1>
         <h2 className="text-2xl font-bold text-zinc-300">
           esse é o meu lugar na Internet.
         </h2>
@@ -26,7 +24,10 @@ export default function Home() {
           <Link
             href="https://www.sebrae-sc.com.br/blog/o-que-e-lifelong-learning"
             target="_blank"
-            className="cursor-pointer text-base font-bold text-white underline"
+            className={cn(
+              'cursor-pointer text-base font-bold underline',
+              TEXTS[color!]
+            )}
           >
             eterno aprendiz
           </Link>{' '}
@@ -45,9 +46,12 @@ export default function Home() {
           <Link
             href="https://www.symplicity.com/pt-br/blog/como-hobbies-e-atividades-extracurriculares-ajudam-no-crescimento-da-carreira#:~:text=Atividades%20fora%20do%20ambiente%20de,na%20carreira%20e%20vice%2Dversa."
             target="_blank"
-            className="cursor-pointer text-base font-bold text-white underline"
+            className={cn(
+              'cursor-pointer text-base font-bold underline',
+              TEXTS[color!]
+            )}
           >
-            trilhas de bicicleta ~ música ~ arte ~ natureza e gastronomia.
+            música ~ games ~ arte e natureza.
           </Link>
         </p>
         <p className="mt-4 text-base">
@@ -55,14 +59,22 @@ export default function Home() {
           <Link
             href="https://medium.com/valter-nascimento-blog/o-que-e-jardim-digital-7029673da847"
             target="_blank"
-            className="cursor-pointer text-base font-bold underline"
+            className={cn(
+              'cursor-pointer text-base font-bold underline',
+              TEXTS[color!]
+            )}
           >
             jardim digital🪴
           </Link>{' '}
           onde compartilho coisas que me fazem ser quem sou. Caso queira falar
           sobre trabalho ou até mesmo conversar tomando um café ☕, não hesite
           em{' '}
-          <a className="cursor-pointer text-base font-bold text-white underline">
+          <a
+            className={cn(
+              'cursor-pointer text-base font-bold underline',
+              TEXTS[color!]
+            )}
+          >
             marcar uma chamada
           </a>{' '}
           comigo.

@@ -26,3 +26,19 @@ export const BACKGROUNDS = {
   orange: 'bg-orange-500',
   violet: 'bg-violet-500'
 };
+
+export const TEXTS = {
+  blue: 'text-blue-500',
+  red: 'text-red-500',
+  green: 'text-green-500',
+  orange: 'text-orange-500',
+  violet: 'text-violet-500'
+};
+
+export const BORDERS = {
+  blue: 'border-blue-500',
+  red: 'border-red-500',
+  green: 'border-green-500',
+  orange: 'border-orange-500',
+  violet: 'border-violet-500'
+};

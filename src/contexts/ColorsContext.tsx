@@ -1,5 +1,4 @@
 'use client';
-import { getCookie, setCookie } from 'cookies-next';
 import {
   Dispatch,
   SetStateAction,
@@ -9,10 +8,10 @@ import {
 } from 'react';
 
 interface ColorsContextProps {
-  color: 'blue' | 'green' | 'red' | 'orange' | 'violet';
+  color: 'blue' | 'green' | 'red' | 'orange' | 'violet' | undefined;
 
   setColor: Dispatch<
-    SetStateAction<'blue' | 'green' | 'red' | 'orange' | 'violet'>
+    SetStateAction<'blue' | 'green' | 'red' | 'orange' | 'violet' | undefined>
   >;
 }
 
@@ -24,19 +23,23 @@ export const ColorsContext = createContext({} as ColorsContextProps);
 
 export function ColorsProvider({ children }: ColorsProviderProps) {
   const [color, setColor] = useState<
-    'blue' | 'green' | 'red' | 'orange' | 'violet'
-  >(
-    (getCookie('preferred_color') as
-      | 'blue'
-      | 'green'
-      | 'red'
-      | 'orange'
-      | 'violet') ?? 'blue'
-  );
+    'blue' | 'green' | 'red' | 'orange' | 'violet' | undefined
+  >();
 
   useEffect(() => {
-    setCookie('preferred_color', color);
-  }, [color]);
+    if (typeof window !== undefined) {
+      const previousColor =
+        (window?.localStorage?.getItem('preferred_color') as
+          | 'blue'
+          | 'green'
+          | 'red'
+          | 'orange'
+          | 'violet') ?? 'blue';
+
+      setColor(previousColor);
+      localStorage.setItem('preferred_color', previousColor);
+    }
+  }, []);
 
   return (
     <ColorsContext.Provider value={{ color, setColor }}>
