@@ -5,7 +5,6 @@ import { cn } from '@/utils/cn';
 import { Header } from '@/components/Header';
 import { PageWrapper } from '@/components/PageWrapper';
 import { Footer } from '@/components/Footer';
-import { Sidebar } from '@/components/Sidebar';
 
 const inter = Inter({ subsets: ['latin'] });
 
