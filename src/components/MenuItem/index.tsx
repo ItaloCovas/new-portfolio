@@ -4,13 +4,15 @@ import { useColors } from '@/hooks/useColors';
 import { cn } from '@/utils/cn';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { AnchorHTMLAttributes } from 'react';
 
-interface MenuItemProps {
+interface MenuItemProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   name: string;
+  className: string;
   itemPathname?: string;
 }
 
-export function MenuItem({ name, itemPathname }: MenuItemProps) {
+export function MenuItem({ name, className, itemPathname }: MenuItemProps) {
   const pathname = usePathname();
   const { color } = useColors();
 
@@ -26,7 +28,7 @@ export function MenuItem({ name, itemPathname }: MenuItemProps) {
       className={cn(
         pathname === itemPathname ? `border-b-[1px] ${BORDERS[color!]}` : '',
         name === 'Blog' ? 'cursor-not-allowed' : 'cursor-pointer',
-        'rounded-t-md  px-4 py-2 text-base transition-colors duration-200 ease-in-out last-of-type:pr-0 hover:bg-white/10'
+        className
       )}
     >
       {name}
