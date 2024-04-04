@@ -9,7 +9,7 @@ export default function Home() {
   const { color } = useColors();
 
   return (
-    <main className="flex w-full flex-col gap-y-10 bg-transparent py-10 text-white">
+    <main className="flex min-h-[70vh] w-full flex-col gap-y-10 bg-transparent py-10 text-white">
       <div>
         <h1 className={cn('text-4xl font-bold', TEXTS[color!])}>Olá,</h1>
         <h2 className="text-2xl font-bold text-zinc-300">
@@ -31,9 +31,7 @@ export default function Home() {
           >
             eterno aprendiz
           </Link>{' '}
-          que vive no 🇧🇷. Criei esse website para mostrar um pouco do meu
-          trabalho e também alguns pensamentos no meu futuro blog pessoal{' '}
-          <strong>(tech/non-tech)</strong>.
+          que vive no 🇧🇷.
         </p>
         {/* <p className="mt-4 text-base">
           Tenho quase 3 anos de experiência trabalhando como Desenvolvedor Front
@@ -69,14 +67,16 @@ export default function Home() {
           onde compartilho coisas que me fazem ser quem sou. Caso queira falar
           sobre trabalho ou até mesmo conversar tomando um café ☕, não hesite
           em{' '}
-          <a
+          <Link
+            href="https://calendly.com/italocovas/coffee-chat"
+            target="_blank"
             className={cn(
               'cursor-pointer text-base font-bold underline',
               TEXTS[color!]
             )}
           >
             marcar uma chamada
-          </a>{' '}
+          </Link>{' '}
           comigo.
         </p>
       </div>

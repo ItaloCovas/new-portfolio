@@ -1,10 +1,10 @@
 export const MENU_ITEM_LIST = [
-  { name: 'Início', pathname: '/' },
-  { name: 'Sobre mim', pathname: '/about-me' },
-  { name: 'Meus projetos', pathname: '/my-projects' },
-  { name: 'Blog', pathname: '/blog' },
+  { name: 'início', pathname: '/' },
+  { name: 'sobre mim', pathname: '/about-me' },
+  { name: 'meus projetos', pathname: '/my-projects' },
+  { name: 'blog', pathname: '/blog' },
   {
-    name: 'Coffee Chat ☕',
+    name: 'coffee chat ☕',
     pathname: 'https://calendly.com/italocovas/coffee-chat'
   }
 ];

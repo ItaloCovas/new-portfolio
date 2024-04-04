@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Lato, Inter } from 'next/font/google';
 import './globals.scss';
 import { cn } from '@/utils/cn';
 import { Header } from '@/components/Header';
 import { PageWrapper } from '@/components/PageWrapper';
 import { Footer } from '@/components/Footer';
+import Template from './template';
 
-const inter = Inter({ subsets: ['latin'] });
+const lato = Lato({ subsets: ['latin'], weight: ['300', '400', '700'] });
+const inter = Inter({ subsets: ['latin'], weight: ['300', '400', '700'] });
 
 export const metadata: Metadata = {
   title: 'Ítalo Covas',
@@ -22,7 +24,7 @@ export default function RootLayout({
     <html lang="pt-BR" suppressHydrationWarning>
       <body
         className={cn(
-          'flex h-full w-full items-center justify-center bg-[#151515] ',
+          'flex h-full w-full items-center justify-center bg-[#151515]',
           inter.className
         )}
       >

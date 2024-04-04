@@ -24,9 +24,11 @@ export function MenuItem({ name, className, itemPathname }: MenuItemProps) {
         }
       }}
       href={itemPathname ?? '/'}
-      target={name === 'Coffee Chat ☕' ? '_blank' : '_parent'}
+      target={name === 'coffee chat ☕' ? '_blank' : '_parent'}
       className={cn(
-        pathname === itemPathname ? `border-b-[1px] ${BORDERS[color!]}` : '',
+        pathname === itemPathname
+          ? `border-b-[1px] font-semibold ${BORDERS[color!]}`
+          : '',
         name === 'Blog' ? 'cursor-not-allowed' : 'cursor-pointer',
         className
       )}

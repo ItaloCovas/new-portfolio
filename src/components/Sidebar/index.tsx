@@ -39,14 +39,14 @@ export function Sidebar({ isOpen, onClose }: MenuProps) {
             </span>
             <strong className={cn('text-3xl', TEXTS[color!])}>.</strong>
           </Link>
-          <div className="flex flex-col gap-y-4">
+          <div className="flex flex-col gap-y-6">
             {MENU_ITEM_LIST.map((item) => {
               return (
                 <MenuItem
                   name={item.name}
                   key={item.name}
                   itemPathname={item.pathname}
-                  className="w-[120px] py-2 text-base transition-colors duration-200 ease-in-out hover:bg-white/10"
+                  className="w-[120px] text-base transition-colors duration-200 ease-in-out hover:bg-white/10"
                   onClick={onClose}
                 />
               );

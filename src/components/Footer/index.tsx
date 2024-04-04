@@ -9,11 +9,11 @@ export function Footer() {
   const { color } = useColors();
 
   return (
-    <footer className="flex max-w-[800px] flex-1 flex-col items-center justify-between gap-y-4 border-t-[1px] border-white/10 bg-transparent py-4 text-white md:flex-row md:py-2 md:py-4">
+    <footer className="flex max-w-[800px] flex-col items-center gap-y-8 border-t-[1px] border-white/10 bg-transparent py-4 text-white md:flex-row md:justify-between md:py-2">
       <Link href="/" className="text-center text-sm">
         © 2024 italocovas.dev
       </Link>
-      <span className={cn('text-center text-sm', TEXTS[color!])}>
+      <span className={cn('text-center text-sm md:mr-12', TEXTS[color!])}>
         feito com atenção e carinho.
       </span>
 
