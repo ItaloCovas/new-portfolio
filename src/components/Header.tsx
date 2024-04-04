@@ -2,15 +2,15 @@
 
 import { MENU_ITEM_LIST } from '@/constants/constants';
 import Link from 'next/link';
-import { MenuItem } from '../MenuItem';
+import { MenuItem } from './MenuItem';
 import { IoMdMenu } from 'react-icons/io';
-import { SettingsSwitcher } from '../SettingsSwitcher';
-import { LanguageSwitcher } from '../LanguageSwitcher';
+import { SettingsSwitcher } from './SettingsSwitcher';
+import { LanguageSwitcher } from './LanguageSwitcher';
 import { useColors } from '@/hooks/useColors';
 import { cn } from '@/utils/cn';
-import { TEXTS } from '@/constants/colors';
 import { useState } from 'react';
-import { Sidebar } from '../Sidebar';
+import { Sidebar } from './Sidebar';
+import { TEXTS } from '@/constants/colors';
 
 export function Header() {
   const { color } = useColors();

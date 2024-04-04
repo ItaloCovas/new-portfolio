@@ -1,9 +1,9 @@
 'use client';
 import * as Popover from '@radix-ui/react-popover';
 import { IoClose, IoSettingsOutline } from 'react-icons/io5';
-import { ColorPalette } from '../ColorPalette';
+import { ColorPalette } from './ColorPalette';
 import { THEME_COLORS } from '@/constants/colors';
-import ThemeSwitcher from '../ThemeSwitcher';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export function SettingsSwitcher() {
   return (

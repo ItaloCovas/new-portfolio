@@ -17,7 +17,7 @@ export default function Home() {
         </h2>
       </div>
 
-      <div className="text-zinc-300">
+      <section className="text-zinc-300">
         <p className="text-base">
           Seja bem-vindo! Meu nome é <strong>Ítalo Garcia Covas</strong> e
           atualmente sou um Desenvolvedor de Software e um{' '}
@@ -79,8 +79,8 @@ export default function Home() {
           </Link>{' '}
           comigo.
         </p>
-      </div>
-      <div className="flex flex-col items-center justify-center md:flex-row md:justify-start md:gap-x-8">
+      </section>
+      <section className="flex flex-col items-center justify-center md:flex-row md:justify-start md:gap-x-8">
         <Image
           alt="Ítalo Covas picture"
           src="/img/italo.jpg"
@@ -97,7 +97,7 @@ export default function Home() {
             Essa frase parece ser minha mas é do Einstein
           </span>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

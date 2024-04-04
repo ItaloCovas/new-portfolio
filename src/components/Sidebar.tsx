@@ -5,8 +5,8 @@ import { cn } from '@/utils/cn';
 import Link from 'next/link';
 import { TEXTS } from '@/constants/colors';
 import { useColors } from '@/hooks/useColors';
+import { MenuItem } from './MenuItem';
 import { MENU_ITEM_LIST } from '@/constants/constants';
-import { MenuItem } from '../MenuItem';
 
 interface MenuProps {
   isOpen: boolean;
