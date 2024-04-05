@@ -9,7 +9,7 @@ interface PageWrapperProps {
 
 export function PageWrapper({ children }: PageWrapperProps) {
   return (
-    <ThemeProvider defaultTheme="system" attribute="class" enableSystem>
+    <ThemeProvider defaultTheme="dark" attribute="class" enableSystem>
       <ColorsProvider>
         <div className="flex min-h-screen w-full max-w-[800px] flex-col bg-transparent px-4 pt-10 md:px-10 md:py-10">
           {children}
