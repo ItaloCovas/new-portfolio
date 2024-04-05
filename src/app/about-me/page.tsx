@@ -12,7 +12,7 @@ export default function AboutMe() {
   return (
     <main className="flex min-h-[70vh] w-full flex-col gap-y-10 bg-transparent py-5 text-white md:py-10">
       <section className="font-medium text-zinc-500 dark:text-zinc-300">
-        <p className="mt-4 text-base">
+        <p className="mt-4 text-base md:text-lg">
           Meu nome é Ítalo Garcia Covas, um Desenvolvedor de Software do 🇧🇷, com
           quase 3 anos de experiência em{' '}
           <strong className={TEXTS[color!]}>
@@ -20,14 +20,14 @@ export default function AboutMe() {
           </strong>
           .
         </p>
-        <p className="mt-4 text-base">
+        <p className="mt-4 text-base md:text-lg">
           Consegui meu primeiro estágio em 2021 e desde então tenho trabalhado
           em diversos projetos e clientes diferentes. Estou no último período em{' '}
           <Link
             href="http://www.fatecrp.edu.br/analise-e-desenvolvimento-de-sistemas/"
             target="_blank"
             className={cn(
-              'cursor-pointer text-base font-bold underline',
+              'cursor-pointer text-base font-bold underline md:text-lg',
               TEXTS[color!]
             )}
           >
@@ -36,7 +36,7 @@ export default function AboutMe() {
           na FATEC e sou extremamente empolgado com tecnologia e o que posso
           construir com ela, principalmente contribuindo com times e pessoas!
         </p>
-        <p className="mt-4 text-base">
+        <p className="mt-4 text-base md:text-lg">
           Gosto muito de aprender e ver como as coisas funcionam, principalmente
           em conteúdos relacionados a Web. Além disso,{' '}
           <strong className={TEXTS[color!]}>

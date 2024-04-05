@@ -18,14 +18,14 @@ export default function Home() {
       </div>
 
       <section className="font-medium text-zinc-500 dark:text-zinc-300">
-        <p className="text-base">
+        <p className="text-base md:text-lg">
           Seja bem-vindo! Meu nome é <strong>Ítalo Garcia Covas</strong> e
           atualmente sou um Desenvolvedor de Software e um{' '}
           <Link
             href="https://www.sebrae-sc.com.br/blog/o-que-e-lifelong-learning"
             target="_blank"
             className={cn(
-              'cursor-pointer text-base font-bold underline',
+              'cursor-pointer text-base font-bold underline md:text-lg',
               TEXTS[color!]
             )}
           >
@@ -33,32 +33,32 @@ export default function Home() {
           </Link>{' '}
           que vive no 🇧🇷.
         </p>
-        {/* <p className="mt-4 text-base">
+        {/* <p className="mt-4 text-base md:text-lg">
           Tenho quase 3 anos de experiência trabalhando como Desenvolvedor Front
           End/Fullstack desde que consegui meu primeiro estágio e estou no
           último período em Análise e Desenvolvimento de Sistemas na FATEC.
         </p> */}
-        <p className="mt-4 text-base">
+        <p className="mt-4 text-base md:text-lg">
           Sou extremamente empolgado com tecnologia e o que posso construir com
           ela, mas para além do trabalho algumas coisas que eu gosto são:{' '}
           <Link
             href="https://www.symplicity.com/pt-br/blog/como-hobbies-e-atividades-extracurriculares-ajudam-no-crescimento-da-carreira#:~:text=Atividades%20fora%20do%20ambiente%20de,na%20carreira%20e%20vice%2Dversa."
             target="_blank"
             className={cn(
-              'cursor-pointer text-base font-bold underline',
+              'cursor-pointer text-base font-bold underline md:text-lg',
               TEXTS[color!]
             )}
           >
             música ~ games ~ arte e natureza.
           </Link>
         </p>
-        <p className="mt-4 text-base">
+        <p className="mt-4 text-base md:text-lg">
           Obrigado por visitar meu{' '}
           <Link
             href="https://medium.com/valter-nascimento-blog/o-que-e-jardim-digital-7029673da847"
             target="_blank"
             className={cn(
-              'cursor-pointer text-base font-bold underline',
+              'cursor-pointer text-base font-bold underline md:text-lg',
               TEXTS[color!]
             )}
           >
@@ -71,7 +71,7 @@ export default function Home() {
             href="https://calendly.com/italocovas/coffee-chat"
             target="_blank"
             className={cn(
-              'cursor-pointer text-base font-bold underline',
+              'cursor-pointer text-base font-bold underline md:text-lg',
               TEXTS[color!]
             )}
           >
@@ -88,7 +88,7 @@ export default function Home() {
           height={200}
           className="rounded-lg bg-contain"
         />
-        <div className="mt-8 flex flex-col items-center gap-y-2 text-center text-sm md:items-start md:text-left md:text-base">
+        <div className="mt-8 flex flex-col items-center gap-y-2 text-center text-base md:items-start md:text-left md:text-lg">
           <span className="font-medium text-zinc-500 dark:text-zinc-300">
             - “O importante é não parar de questionar, a curiosidade tem sua
             própria razão de existir.”
