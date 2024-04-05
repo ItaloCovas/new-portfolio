@@ -3,12 +3,13 @@ export function SwaggerIcon() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 128 128"
-      className="text-black dark:text-white"
+      className="text-zinc-500 dark:text-zinc-300"
       height="4em"
       width="4em"
     >
       <path
-        fill="transparent"
+        fill="currentColor"
+        className="text-zinc-100 dark:text-[#323330]"
         d="M63.999 124.945c-33.607 0-60.95-27.34-60.95-60.949C3.05 30.388 30.392 3.048 64 3.048s60.95 27.342 60.95 60.95c0 33.607-27.343 60.946-60.95 60.946z"
       />
       <path

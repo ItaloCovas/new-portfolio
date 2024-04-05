@@ -9,15 +9,15 @@ export default function Home() {
   const { color } = useColors();
 
   return (
-    <main className="flex min-h-[70vh] w-full flex-col gap-y-10 bg-transparent py-10 text-white">
+    <main className="flex min-h-[70vh] w-full flex-col gap-y-10 bg-transparent py-10 text-white md:py-10">
       <div>
         <h1 className={cn('text-4xl font-bold', TEXTS[color!])}>Olá,</h1>
-        <h2 className="text-2xl font-bold text-zinc-300">
+        <h2 className="text-2xl font-bold text-zinc-500 dark:text-zinc-300">
           esse é o meu lugar na Internet.
         </h2>
       </div>
 
-      <section className="text-zinc-300">
+      <section className="font-medium text-zinc-500 dark:text-zinc-300">
         <p className="text-base">
           Seja bem-vindo! Meu nome é <strong>Ítalo Garcia Covas</strong> e
           atualmente sou um Desenvolvedor de Software e um{' '}
@@ -89,12 +89,12 @@ export default function Home() {
           className="rounded-lg bg-contain"
         />
         <div className="mt-8 flex flex-col items-center gap-y-2 text-center text-sm md:items-start md:text-left md:text-base">
-          <span>
+          <span className="font-medium text-zinc-500 dark:text-zinc-300">
             - “O importante é não parar de questionar, a curiosidade tem sua
             própria razão de existir.”
           </span>
-          <span className="text-zinc-300">
-            Essa frase parece ser minha mas é do Einstein
+          <span className="text-zinc-400 dark:text-zinc-300">
+            Essa frase parece ser minha mas é do Einstein.
           </span>
         </div>
       </section>

@@ -25,7 +25,7 @@ export function Header() {
   }
 
   return (
-    <header className="relative flex h-10 max-w-[800px] items-end justify-between border-b-[1px] border-white/10 bg-transparent text-zinc-300">
+    <header className="relative flex h-10 max-w-[800px] items-end justify-between border-b-[1px] border-zinc-500/20 bg-transparent text-zinc-500 dark:border-white/10 dark:text-zinc-300">
       <Sidebar isOpen={isOpen} onClose={handleClose} />
       <div className="absolute bottom-[-40px] right-[2px] hidden items-center gap-x-2 md:flex">
         <LanguageSwitcher />
@@ -33,7 +33,7 @@ export function Header() {
       </div>
 
       <Link href="/">
-        <span className="cursor-pointer select-none rounded-xl text-xl font-bold text-white">
+        <span className="cursor-pointer select-none rounded-xl text-xl font-bold text-zinc-500 dark:text-white">
           ítalocovas
         </span>
         <strong className={cn('text-3xl', TEXTS[color!])}>.</strong>
@@ -45,7 +45,7 @@ export function Header() {
               name={item.name}
               key={item.name}
               itemPathname={item.pathname}
-              className="rounded-t-md  px-4 py-2 text-base transition-colors duration-200 ease-in-out last-of-type:pr-0 hover:bg-white/10"
+              className="rounded-t-md px-4 py-2 text-base font-medium transition-colors duration-200 ease-in-out last-of-type:pr-0 hover:bg-zinc-200/60 dark:hover:bg-white/10"
             />
           );
         })}

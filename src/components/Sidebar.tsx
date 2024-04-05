@@ -22,7 +22,7 @@ export function Sidebar({ isOpen, onClose }: MenuProps) {
   return (
     <div
       className={cn(
-        'fixed left-0 top-0 z-[98] flex h-[100%] w-full flex-col bg-[#252525]/[0.98] delay-150 duration-200 ease-out lg:hidden',
+        'fixed left-0 top-0 z-[98] flex h-[100%] w-full flex-col bg-white/[0.98] delay-150 duration-200 ease-out dark:bg-[#252525]/[0.98] lg:hidden',
         menuClass
       )}
     >
@@ -34,7 +34,7 @@ export function Sidebar({ isOpen, onClose }: MenuProps) {
       <div className="h-full p-4 pr-5 pt-2">
         <div className="flex flex-col gap-y-4 text-lg font-semibold">
           <Link href="/">
-            <span className="cursor-pointer select-none rounded-xl text-xl font-bold text-white">
+            <span className="cursor-pointer select-none rounded-xl text-xl font-bold text-zinc-700 dark:text-white">
               ítalocovas
             </span>
             <strong className={cn('text-3xl', TEXTS[color!])}>.</strong>
@@ -46,7 +46,7 @@ export function Sidebar({ isOpen, onClose }: MenuProps) {
                   name={item.name}
                   key={item.name}
                   itemPathname={item.pathname}
-                  className="w-[120px] text-base transition-colors duration-200 ease-in-out hover:bg-white/10"
+                  className="w-[120px] text-base font-medium transition-colors duration-200 ease-in-out hover:bg-zinc-200/60 dark:hover:bg-white/10"
                   onClick={onClose}
                 />
               );

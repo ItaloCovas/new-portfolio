@@ -3,7 +3,7 @@ export function ViteIcon() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 128 128"
-      className="text-black dark:text-white"
+      className="text-zinc-500 dark:text-zinc-300"
       height="4em"
       width="4em"
     >
@@ -29,9 +29,21 @@ export function ViteIcon() {
           gradientTransform="translate(0 .937) scale(.3122)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stopColor="white" />
-          <stop offset=".083" stopColor="#3f3f3f" />
-          <stop offset="1" stopColor="#3f3f3f" />
+          <stop
+            offset="0"
+            stopColor="currentColor"
+            className="text-[#3f3f3f] dark:text-white"
+          />
+          <stop
+            offset=".083"
+            stopColor="currentColor"
+            className="text-zinc-200 dark:text-[#3f3f3f]"
+          />
+          <stop
+            offset="1"
+            stopColor="currentColor"
+            className="text-zinc-200 dark:text-[#3f3f3f]"
+          />
         </linearGradient>
       </defs>
       <path

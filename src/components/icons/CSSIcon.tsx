@@ -1,7 +1,7 @@
 export function CSSIcon() {
   return (
     <svg
-      className="text-black dark:text-white"
+      className="text-zinc-500 dark:text-zinc-300"
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"

@@ -3,7 +3,7 @@ export function AWSIcon() {
     <svg
       viewBox="0 0 128 128"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-black dark:text-white"
+      className="text-zinc-500 dark:text-zinc-300"
       height="4em"
       width="4em"
     >
