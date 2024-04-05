@@ -14,7 +14,7 @@ export function Icon({ category, icon }: IconProps) {
   return (
     <div
       className={cn(
-        'flex h-[100px] w-[100px] flex-col items-center justify-center rounded-md border-[1px]  bg-[#3f3f3f]/50 px-3 py-2',
+        'flex h-[100px] w-[100px] cursor-pointer flex-col items-center justify-center rounded-md  border-[2px] bg-[#3f3f3f]/50 px-3 py-2',
         BORDERS[color!]
       )}
     >

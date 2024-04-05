@@ -50,8 +50,92 @@ export default function AboutMe() {
         <h1 className="text-center text-2xl font-bold md:text-left">
           ~ minha <span className={TEXTS[color!]}>tech stack</span>
         </h1>
-        <div className="flex flex-wrap justify-center gap-6 ">
+        <div className="flex flex-wrap justify-center gap-6 md:justify-start">
           {STACK_ICONS_LIST.map((item) => {
+            if (
+              item.category !== 'front end' &&
+              item.category !== 'back end' &&
+              item.category !== 'front end/back end'
+            ) {
+              return;
+            }
+
+            return (
+              <Icon key={item.id} category={item.category} icon={item.icon} />
+            );
+          })}
+        </div>
+
+        <h1 className="text-center text-2xl font-bold md:text-left">
+          ~ <span className={TEXTS[color!]}>testes</span>
+        </h1>
+        <div className="flex flex-wrap justify-center gap-6 md:justify-start ">
+          {STACK_ICONS_LIST.map((item) => {
+            if (item.category !== 'tests') {
+              return;
+            }
+
+            return (
+              <Icon key={item.id} category={item.category} icon={item.icon} />
+            );
+          })}
+        </div>
+
+        <h1 className="text-center text-2xl font-bold md:text-left">
+          ~ libs e <span className={TEXTS[color!]}>docs</span>
+        </h1>
+        <div className="flex flex-wrap justify-center gap-6 md:justify-start ">
+          {STACK_ICONS_LIST.map((item) => {
+            if (item.category !== 'docs' && item.category !== 'lib') {
+              return;
+            }
+
+            return (
+              <Icon key={item.id} category={item.category} icon={item.icon} />
+            );
+          })}
+        </div>
+
+        <h1 className="text-center text-2xl font-bold md:text-left">
+          ~ versionamento e <span className={TEXTS[color!]}>infra</span>
+        </h1>
+        <div className="flex flex-wrap justify-center gap-6 md:justify-start ">
+          {STACK_ICONS_LIST.map((item) => {
+            if (item.category !== 'versioning' && item.category !== 'infra') {
+              return;
+            }
+
+            return (
+              <Icon key={item.id} category={item.category} icon={item.icon} />
+            );
+          })}
+        </div>
+
+        <h1 className="text-center text-2xl font-bold md:text-left">
+          ~ sistemas operacionais e{' '}
+          <span className={TEXTS[color!]}>utilitários</span>
+        </h1>
+        <div className="flex flex-wrap justify-center gap-6 md:justify-start ">
+          {STACK_ICONS_LIST.map((item) => {
+            if (item.category !== 'O.S' && item.category !== 'miscellaneous') {
+              return;
+            }
+
+            return (
+              <Icon key={item.id} category={item.category} icon={item.icon} />
+            );
+          })}
+        </div>
+
+        <h1 className="text-center text-2xl font-bold md:text-left">
+          ~<span className={TEXTS[color!]}> bancos de dados</span>
+        </h1>
+        <div className="flex flex-wrap justify-center gap-6 md:justify-start ">
+          {STACK_ICONS_LIST.map((item) => {
+            if (item.category !== 'database') {
+              return;
+            }
+
             return (
               <Icon key={item.id} category={item.category} icon={item.icon} />
             );

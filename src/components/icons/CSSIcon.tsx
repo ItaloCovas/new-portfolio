@@ -4,7 +4,7 @@ export function CSSIcon() {
       className="text-black dark:text-white"
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       role="img"
       viewBox="0 0 24 24"
       height="4em"
