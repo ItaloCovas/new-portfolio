@@ -9,7 +9,7 @@ export default function NotFound() {
   const { color } = useColors();
 
   return (
-    <div className="flex min-h-[70vh] flex-col items-center justify-center text-center text-white">
+    <div className="flex min-h-[70vh] flex-col items-center justify-center text-center font-medium text-zinc-500 dark:text-white">
       <ImSad className="mb-6 h-[30px] w-[30px]" />
 
       <h2 className="text-base md:text-lg">

@@ -2,16 +2,20 @@
 import { TEXTS } from '@/constants/colors';
 import { useColors } from '@/hooks/useColors';
 import { cn } from '@/utils/cn';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Home() {
+export default function Home({}) {
+  const t = useTranslations();
   const { color } = useColors();
 
   return (
     <main className="flex min-h-[70vh] w-full flex-col gap-y-10 bg-transparent py-10 text-white md:py-10">
       <div>
-        <h1 className={cn('text-4xl font-bold', TEXTS[color!])}>Olá,</h1>
+        <h1 className={cn('text-4xl font-bold', TEXTS[color!])}>
+          {t('home.greetings')}
+        </h1>
         <h2 className="text-2xl font-bold text-zinc-500 dark:text-zinc-300">
           esse é o meu lugar na Internet.
         </h2>
