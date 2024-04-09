@@ -2,10 +2,12 @@
 import { TEXTS } from '@/constants/colors';
 import { useColors } from '@/hooks/useColors';
 import { cn } from '@/utils/cn';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { TbBrandGithub, TbBrandLinkedin } from 'react-icons/tb';
 
 export function Footer() {
+  const t = useTranslations();
   const { color } = useColors();
 
   return (
@@ -19,7 +21,7 @@ export function Footer() {
           TEXTS[color!]
         )}
       >
-        feito com atenção e carinho.
+        {t('footer.description')}
       </span>
 
       <div className="flex items-center gap-x-[1px] justify-self-end">

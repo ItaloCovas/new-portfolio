@@ -11,8 +11,11 @@ import { cn } from '@/utils/cn';
 import { useState } from 'react';
 import { Sidebar } from './Sidebar';
 import { TEXTS } from '@/constants/colors';
+import { useLocale, useTranslations } from 'next-intl';
 
 export function Header() {
+  const locale = useLocale();
+  const t = useTranslations();
   const { color } = useColors();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -42,9 +45,9 @@ export function Header() {
         {MENU_ITEM_LIST.map((item) => {
           return (
             <MenuItem
-              name={item.name}
+              name={t(`header.${item.name}`)}
               key={item.name}
-              itemPathname={item.pathname}
+              itemPathname={`/${locale}${item.pathname}`}
               className="rounded-t-md px-4 py-2 text-base font-medium transition-colors duration-200 ease-in-out last-of-type:pr-0 hover:bg-zinc-200/60 dark:hover:bg-white/10"
             />
           );

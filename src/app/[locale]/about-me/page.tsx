@@ -4,25 +4,22 @@ import { TEXTS } from '@/constants/colors';
 import { STACK_ICONS_LIST } from '@/constants/constants';
 import { useColors } from '@/hooks/useColors';
 import { cn } from '@/utils/cn';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 export default function AboutMe() {
+  const t = useTranslations();
   const { color } = useColors();
 
   return (
     <main className="flex min-h-[70vh] w-full flex-col gap-y-10 bg-transparent py-5 text-white md:py-10">
       <section className="font-medium text-zinc-500 dark:text-zinc-300">
         <p className="mt-4 text-base md:text-lg">
-          Meu nome é Ítalo Garcia Covas, um Desenvolvedor de Software do 🇧🇷, com
-          quase 3 anos de experiência em{' '}
-          <strong className={TEXTS[color!]}>
-            Desenvolvimento Front End / Fullstack
-          </strong>
-          .
+          {t('aboutMe.presentation')}{' '}
+          <strong className={TEXTS[color!]}>{t('aboutMe.role')}</strong>.
         </p>
         <p className="mt-4 text-base md:text-lg">
-          Consegui meu primeiro estágio em 2021 e desde então tenho trabalhado
-          em diversos projetos e clientes diferentes. Estou no último período em{' '}
+          {t('aboutMe.internship')}{' '}
           <Link
             href="http://www.fatecrp.edu.br/analise-e-desenvolvimento-de-sistemas/"
             target="_blank"
@@ -31,24 +28,20 @@ export default function AboutMe() {
               TEXTS[color!]
             )}
           >
-            Análise e Desenvolvimento de Sistemas
+            {t('aboutMe.course')}
           </Link>{' '}
-          na FATEC e sou extremamente empolgado com tecnologia e o que posso
-          construir com ela, principalmente contribuindo com times e pessoas!
+          {t('aboutMe.college')}
         </p>
         <p className="mt-4 text-base md:text-lg">
-          Gosto muito de aprender e ver como as coisas funcionam, principalmente
-          em conteúdos relacionados a Web. Além disso,{' '}
-          <strong className={TEXTS[color!]}>
-            tenho muito entusiasmo em Segurança da Informação
-          </strong>
-          , área que pretendo aprender cada vez mais e aplicar os conhecimentos
-          no meu dia a dia.
+          {t('aboutMe.learning')}{' '}
+          <strong className={TEXTS[color!]}>{t('aboutMe.security')}</strong>
+          {t('aboutMe.knowledge')}
         </p>
       </section>
       <section className="flex h-full w-full flex-col gap-y-10">
         <h1 className="text-center text-2xl font-bold text-zinc-500 dark:text-zinc-300 md:text-left">
-          ~ minha <span className={TEXTS[color!]}>tech stack</span>
+          {t('aboutMe.my')}{' '}
+          <span className={TEXTS[color!]}>{t('aboutMe.techStack')}</span>
         </h1>
         <div className="flex flex-wrap justify-center gap-6 md:justify-start">
           {STACK_ICONS_LIST.map((item) => {
@@ -67,7 +60,7 @@ export default function AboutMe() {
         </div>
 
         <h1 className="text-center text-2xl font-bold text-zinc-500 dark:text-zinc-300 md:text-left ">
-          ~ <span className={TEXTS[color!]}>testes</span>
+          ~ <span className={TEXTS[color!]}>{t('aboutMe.tests')}</span>
         </h1>
         <div className="flex flex-wrap justify-center gap-6 md:justify-start ">
           {STACK_ICONS_LIST.map((item) => {
@@ -82,7 +75,8 @@ export default function AboutMe() {
         </div>
 
         <h1 className="text-center text-2xl font-bold text-zinc-500 dark:text-zinc-300 md:text-left">
-          ~ libs e <span className={TEXTS[color!]}>docs</span>
+          {t('aboutMe.libsAnd')}{' '}
+          <span className={TEXTS[color!]}>{t('aboutMe.docs')}</span>
         </h1>
         <div className="flex flex-wrap justify-center gap-6 md:justify-start ">
           {STACK_ICONS_LIST.map((item) => {
@@ -97,7 +91,8 @@ export default function AboutMe() {
         </div>
 
         <h1 className="text-center text-2xl font-bold text-zinc-500 dark:text-zinc-300 md:text-left">
-          ~ versionamento e <span className={TEXTS[color!]}>infra</span>
+          {t('aboutMe.versioning')}{' '}
+          <span className={TEXTS[color!]}>{t('aboutMe.infra')}</span>
         </h1>
         <div className="flex flex-wrap justify-center gap-6 md:justify-start ">
           {STACK_ICONS_LIST.map((item) => {
@@ -112,8 +107,8 @@ export default function AboutMe() {
         </div>
 
         <h1 className="text-center text-2xl font-bold text-zinc-500 dark:text-zinc-300 md:text-left">
-          ~ utilitários e{' '}
-          <span className={TEXTS[color!]}>sistemas operacionais</span>
+          {t('aboutMe.utilities')}{' '}
+          <span className={TEXTS[color!]}>{t('aboutMe.os')}</span>
         </h1>
         <div className="flex flex-wrap justify-center gap-6 md:justify-start ">
           {STACK_ICONS_LIST.map((item) => {
@@ -128,7 +123,7 @@ export default function AboutMe() {
         </div>
 
         <h1 className="text-center text-2xl font-bold text-zinc-500 dark:text-zinc-300 md:text-left">
-          ~<span className={TEXTS[color!]}> bancos de dados</span>
+          ~<span className={TEXTS[color!]}> {t('aboutMe.databases')}</span>
         </h1>
         <div className="flex flex-wrap justify-center gap-6 md:justify-start ">
           {STACK_ICONS_LIST.map((item) => {

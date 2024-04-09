@@ -1,5 +1,50 @@
 {
+  "header": {
+    "home": "início",
+    "aboutMe": "sobre mim",
+    "myProjects": "meus projetos",
+    "blog": "blog",
+    "coffeeChat": "coffee chat ☕"
+  },
   "home": {
-    "greetings": "Olá"
+    "greetings": "Olá,",
+    "description": "esse é o meu lugar na Internet.",
+    "welcome": "Seja bem-vindo! Meu nome é",
+    "name": "Ítalo Garcia Covas",
+    "job": "e atualmente sou um Desenvolvedor de Software e um",
+    "learner": "eterno aprendiz",
+    "location": "que vive no 🇧🇷.",
+    "tech": "Sou extremamente empolgado com tecnologia e o que posso construir com ela, mas para além do trabalho algumas coisas que eu gosto são:",
+    "hobbies": "música ~ games ~ arte e natureza.",
+    "thanks": "Obrigado por visitar meu",
+    "digitalGarden": "jardim digital🪴",
+    "coffeeChat": "onde compartilho coisas que me fazem ser quem sou. Caso queira falar sobre trabalho ou até mesmo conversar tomando um café ☕, não hesite em",
+    "bookACall": "marcar uma chamada",
+    "withMe": "comigo.",
+    "phrase": "- \"O importante é não parar de questionar, a curiosidade tem sua própria razão de existir.\"",
+    "author": "Essa frase parece ser minha mas é do Einstein."
+  },
+  "aboutMe": {
+    "presentation": "Meu nome é Ítalo Garcia Covas, um Desenvolvedor de Software do 🇧🇷, com quase 3 anos de experiência em",
+    "role": "Desenvolvimento Front End / Fullstack",
+    "internship": "Consegui meu primeiro estágio em 2021 e desde então tenho trabalhado em diversos projetos e clientes diferentes. Estou no último período em",
+    "course": "Análise e Desenvolvimento de Sistemas",
+    "college": "na FATEC e sou extremamente empolgado com tecnologia e o que posso construir com ela, principalmente contribuindo com times e pessoas!",
+    "learning": "Gosto muito de aprender e ver como as coisas funcionam, principalmente em conteúdos relacionados a Web. Além disso,",
+    "security": "tenho muito entusiasmo em Segurança da Informação",
+    "knowledge": ", área que pretendo aprender cada vez mais e aplicar os conhecimentos no meu dia a dia.",
+    "my": "~ minha",
+    "techStack": "tech stack",
+    "tests": "testes",
+    "libsAnd": " ~ libs e",
+    "docs": "docs",
+    "versioning": "~ versionamento e",
+    "infra": "infra",
+    "utilities": "~ utilitários e",
+    "os": "sistemas operacionais",
+    "databases": "bancos de dados"
+  },
+  "footer": {
+    "description": "feito com atenção e carinho."
   }
 }

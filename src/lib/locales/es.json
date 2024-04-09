@@ -1,5 +1,50 @@
 {
+  "header": {
+    "home": "inicio",
+    "aboutMe": "acerca de mi",
+    "myProjects": "mis proyectos",
+    "blog": "blog",
+    "coffeeChat": "coffee chat ☕"
+  },
   "home": {
-    "greetings": "Hola"
+    "greetings": "Hola,",
+    "description": "este es mi lugar en Internet.",
+    "welcome": "¡Bienvenido! Mi nombre es",
+    "name": "Ítalo Garcia Covas",
+    "job": "y actualmente soy Desarrollador de Software y uno",
+    "learner": "aprendiz eterno",
+    "location": "que vive en 🇧🇷.",
+    "tech": "Soy muy entusiasmado con la tecnología y lo que puedo construir con ella, pero además del trabajo, algunas cosas que me gustan son:",
+    "hobbies": "música ~ games ~ arte y naturaleza.",
+    "thanks": "Gracias por visitar mi",
+    "digitalGarden": "jardín digital🪴",
+    "coffeeChat": "donde comparto cosas que me hacen quien soy. Si quieres hablar de trabajo o incluso charlar tomando un café ☕, no dudes en",
+    "bookACall": "programar una llamada",
+    "withMe": "conmigo.",
+    "phrase": "- \"Lo importante es no dejar de cuestionar. La curiosidad tiene su propia razón de existir.\"",
+    "author": "Esta frase parece mía pero es de Einstein."
+  },
+  "aboutMe": {
+    "presentation": "Mi nombre es Ítalo Garcia Covas, un Desarrollador de Software de 🇧🇷, con casi 3 años de experiencia en",
+    "role": "Desarrollo Front End / Fullstack",
+    "internship": "Conseguí mi primer pasantía en 2021 y desde entonces he trabajado en diversos proyectos y clientes diferentes. Estoy en el último período en",
+    "course": "Análisis y Desarrollo de Sistemas",
+    "college": "en la FATEC y estoy extremadamente emocionado con la tecnología y lo que puedo construir con ella, ¡principalmente contribuyendo con equipos y personas!",
+    "learning": "Me gusta mucho aprender y ver cómo funcionan las cosas, especialmente en contenidos relacionados con la Web. Además,",
+    "security": "tengo mucho entusiasmo por la Seguridad de la Información",
+    "knowledge": ", área en la que planeo aprender cada vez más y aplicar los conocimientos en mi día a día.",
+    "my": "~ mi",
+    "techStack": "stack tecnológico",
+    "tests": "pruebas",
+    "libsAnd": " ~ bibliotecas y",
+    "docs": "documentación",
+    "versioning": "~ versionamiento y",
+    "infra": "infraestructura",
+    "utilities": "~ utilidades y",
+    "os": "sistemas operativos",
+    "databases": "bases de datos"
+  },
+  "footer": {
+    "description": "hecho con atención y cuidado."
   }
 }

@@ -18,19 +18,17 @@ export function MenuItem({ name, className, itemPathname }: MenuItemProps) {
 
   return (
     <Link
-      onClick={(event: React.MouseEvent) => {
-        if (name === 'Blog') {
-          event.preventDefault();
-        }
-      }}
       href={itemPathname ?? '/'}
-      target={name === 'coffee chat ☕' ? '_blank' : '_parent'}
+      target={
+        itemPathname === 'https://calendly.com/italocovas/coffee-chat'
+          ? '_blank'
+          : '_parent'
+      }
       className={cn(
         className,
         pathname === itemPathname
           ? `border-b-[2px] font-bold ${BORDERS[color!]}`
-          : '',
-        name === 'Blog' ? 'cursor-not-allowed' : 'cursor-pointer'
+          : ''
       )}
     >
       {name}

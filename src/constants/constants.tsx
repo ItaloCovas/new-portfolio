@@ -33,12 +33,12 @@ interface Icons {
 }
 
 export const MENU_ITEM_LIST = [
-  { name: 'início', pathname: '/' },
-  { name: 'sobre mim', pathname: '/about-me' },
-  { name: 'meus projetos', pathname: '/my-projects' },
+  { name: 'home', pathname: '' },
+  { name: 'aboutMe', pathname: '/about-me' },
+  { name: 'myProjects', pathname: '/my-projects' },
   { name: 'blog', pathname: '/blog' },
   {
-    name: 'coffee chat ☕',
+    name: 'coffeeChat',
     pathname: 'https://calendly.com/italocovas/coffee-chat'
   }
 ];

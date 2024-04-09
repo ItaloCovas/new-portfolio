@@ -7,6 +7,7 @@ import { TEXTS } from '@/constants/colors';
 import { useColors } from '@/hooks/useColors';
 import { MenuItem } from './MenuItem';
 import { MENU_ITEM_LIST } from '@/constants/constants';
+import { useLocale, useTranslations } from 'next-intl';
 
 interface MenuProps {
   isOpen: boolean;
@@ -14,7 +15,8 @@ interface MenuProps {
 }
 
 export function Sidebar({ isOpen, onClose }: MenuProps) {
-  const pathname = usePathname();
+  const t = useTranslations();
+  const locale = useLocale();
   const { color } = useColors();
 
   const menuClass = isOpen ? 'translate-x-0' : 'translate-x-full';
@@ -43,9 +45,9 @@ export function Sidebar({ isOpen, onClose }: MenuProps) {
             {MENU_ITEM_LIST.map((item) => {
               return (
                 <MenuItem
-                  name={item.name}
+                  name={t(`header.${item.name}`)}
                   key={item.name}
-                  itemPathname={item.pathname}
+                  itemPathname={`/${locale}${item.pathname}`}
                   className="w-[120px] text-base font-medium transition-colors duration-200 ease-in-out hover:bg-zinc-200/60 dark:hover:bg-white/10"
                   onClick={onClose}
                 />
