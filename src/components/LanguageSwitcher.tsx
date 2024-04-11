@@ -9,12 +9,12 @@ export function LanguageSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
 
-  const switchLocale = (newLocale: string) => {
+  function switchLocale(newLocale: string) {
     const newPathname = pathname.startsWith(`/${locale}`)
       ? pathname.replace(`/${locale}`, `/${newLocale}`)
       : `/${newLocale}`;
     router.replace(newPathname);
-  };
+  }
 
   return (
     <div>
