@@ -10,6 +10,7 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { getLocalesConfig } from '@/utils/getLocalesConfig';
+import AnimationLayout from '@/components/AnimationLayout';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -51,7 +52,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <PageWrapper>
             <Header />
-            {children}
+            <AnimationLayout>{children}</AnimationLayout>
             <Footer />
           </PageWrapper>
         </NextIntlClientProvider>

@@ -47,7 +47,11 @@ export function Sidebar({ isOpen, onClose }: MenuProps) {
                 <MenuItem
                   name={t(`header.${item.name}`)}
                   key={item.name}
-                  itemPathname={`/${locale}${item.pathname}`}
+                  itemPathname={
+                    item.name === 'coffeeChat'
+                      ? 'https://calendly.com/italocovas/coffee-chat'
+                      : `/${locale}${item.pathname}`
+                  }
                   className="w-[120px] text-base font-medium transition-colors duration-200 ease-in-out hover:bg-zinc-200/60 dark:hover:bg-white/10"
                   onClick={onClose}
                 />

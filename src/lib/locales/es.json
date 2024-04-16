@@ -25,6 +25,8 @@
     "author": "Esta frase parece mía pero es de Einstein."
   },
   "aboutMe": {
+    "firstTitle": "Acerca",
+    "secondTitle": "de mi",
     "presentation": "Mi nombre es Ítalo Garcia Covas, un Desarrollador de Software de 🇧🇷, con casi 3 años de experiencia en",
     "role": "Desarrollo Front End / Fullstack",
     "internship": "Conseguí mi primer pasantía en 2021 y desde entonces he trabajado en diversos proyectos y clientes diferentes. Estoy en el último período en",
@@ -43,6 +45,14 @@
     "utilities": "~ utilidades y",
     "os": "sistemas operativos",
     "databases": "bases de datos"
+  },
+  "myProjects": {
+    "firstTitle": "Mis",
+    "secondTitle": "proyectos"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "reflexiones sobre la vida y desarrollo de software"
   },
   "footer": {
     "description": "hecho con atención y cuidado."

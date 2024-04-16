@@ -42,3 +42,14 @@ export const BORDERS = {
   orange: 'border-orange-500',
   violet: 'border-violet-500'
 };
+
+export const DATA_STATES = {
+  blue: 'data-[state=active]:text-blue-500 data-[state=active]:font-bold data-[state=active]:border-b data-[state=active]:border-blue-500',
+  red: 'data-[state=active]:text-red-500 data-[state=active]:font-bold data-[state=active]:border-b data-[state=active]:border-red-500',
+  green:
+    'data-[state=active]:text-green-500 data-[state=active]:font-bold data-[state=active]:border-b data-[state=active]:border-green-500',
+  orange:
+    'data-[state=active]:text-orange-500 data-[state=active]:font-bold data-[state=active]:border-b data-[state=active]:border-orange-500',
+  violet:
+    'data-[state=active]:text-violet-500 data-[state=active]:font-bold data-[state=active]:border-b data-[state=active]:border-violet-500'
+};

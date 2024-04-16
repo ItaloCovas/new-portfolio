@@ -13,8 +13,13 @@ export default function AboutMe() {
 
   return (
     <main className="flex min-h-[70vh] w-full flex-col gap-y-10 bg-transparent py-5 text-white md:py-10">
+      <h1 className="text-3xl font-bold text-zinc-500 dark:text-zinc-300">
+        {t('aboutMe.firstTitle')}{' '}
+        <span className={TEXTS[color!]}>{t('aboutMe.secondTitle')}</span>
+      </h1>
+
       <section className="font-medium text-zinc-500 dark:text-zinc-300">
-        <p className="mt-4 text-base md:text-lg">
+        <p className=" text-base md:text-lg">
           {t('aboutMe.presentation')}{' '}
           <strong className={TEXTS[color!]}>{t('aboutMe.role')}</strong>.
         </p>
@@ -54,7 +59,12 @@ export default function AboutMe() {
             }
 
             return (
-              <Icon key={item.id} category={item.category} icon={item.icon} />
+              <Icon
+                key={item.id}
+                category={item.category}
+                icon={item.icon}
+                name={item.name}
+              />
             );
           })}
         </div>
@@ -69,7 +79,12 @@ export default function AboutMe() {
             }
 
             return (
-              <Icon key={item.id} category={item.category} icon={item.icon} />
+              <Icon
+                key={item.id}
+                category={item.category}
+                icon={item.icon}
+                name={item.name}
+              />
             );
           })}
         </div>
@@ -85,7 +100,12 @@ export default function AboutMe() {
             }
 
             return (
-              <Icon key={item.id} category={item.category} icon={item.icon} />
+              <Icon
+                key={item.id}
+                category={item.category}
+                icon={item.icon}
+                name={item.name}
+              />
             );
           })}
         </div>
@@ -101,7 +121,12 @@ export default function AboutMe() {
             }
 
             return (
-              <Icon key={item.id} category={item.category} icon={item.icon} />
+              <Icon
+                key={item.id}
+                category={item.category}
+                icon={item.icon}
+                name={item.name}
+              />
             );
           })}
         </div>
@@ -117,7 +142,12 @@ export default function AboutMe() {
             }
 
             return (
-              <Icon key={item.id} category={item.category} icon={item.icon} />
+              <Icon
+                key={item.id}
+                category={item.category}
+                icon={item.icon}
+                name={item.name}
+              />
             );
           })}
         </div>
@@ -132,7 +162,12 @@ export default function AboutMe() {
             }
 
             return (
-              <Icon key={item.id} category={item.category} icon={item.icon} />
+              <Icon
+                key={item.id}
+                category={item.category}
+                icon={item.icon}
+                name={item.name}
+              />
             );
           })}
         </div>

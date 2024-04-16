@@ -25,6 +25,8 @@
     "author": "This phrase seems to be mine but it's Einstein's."
   },
   "aboutMe": {
+    "firstTitle": "About",
+    "secondTitle": "me",
     "presentation": "My name is Ítalo Garcia Covas, a Software Developer at 🇧🇷, with almost 3 years of experience in",
     "role": "Front End/Fullstack Development",
     "internship": "I got my first internship in 2021 and since then I have worked on several different projects and clients. I'm in the last semester of",
@@ -43,6 +45,14 @@
     "utilities": "~ utilities and",
     "os": "operational systems",
     "databases": "databases"
+  },
+  "myProjects": {
+    "firstTitle": "My",
+    "secondTitle": "projects"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "thoughts on life and software development"
   },
   "footer": {
     "description": "made with attention and care."
